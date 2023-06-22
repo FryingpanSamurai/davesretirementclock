@@ -41,7 +41,7 @@
     .main-wrapper {
         height: 100%;
         width: 100%;
-        background-color: #333;
+        background-image: linear-gradient(to bottom right, rgb(33,34,41), rgb(42,34,31));
         display: flex;
         justify-content: center;
         align-items: center;
@@ -55,8 +55,10 @@
         gap: 3%;
         text-align: center;
         width: 80%;
-        height: 60%;
-        background-color: rgba(255, 255, 255, 0.2);
+        height: 70%;
+        min-width: 768px;
+        min-height: 500px;
+        background-color: rgba(11, 11, 11, 0.1);
         border-radius: 15px;
     }
 
@@ -84,7 +86,7 @@
     }
 
     .f-row, .l-row {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(11, 11, 11, 0.2);
         border-radius: 10px;
     }
 
@@ -97,10 +99,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(11, 11, 11, 0.2);
         width: 50%;
         height: 100%;
         border-radius: 10px;
+    }
+
+    .subtitle, .title {
+        font-family: 'Jost', sans-serif;
+        color: rgb(144, 111, 104);
+        font-size: 28pt;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 30pt;
+    }
+
+    .sub-text {
+        font-family: 'Share Tech Mono', sans-serif;
+        font-size: 28pt;
+        color: rgba(94, 84, 82);
     }
 </style>
 
@@ -110,22 +129,22 @@
         <!-- this will count down to 6/28/2024 @ 3pm -->
         <div class="f-row">
             <span class="title">Dave's Retirement Countdown</span>
-            <span class="remaining">{mydate}</span>
+            <span class="sub-text">{mydate}</span>
         </div>
         <div class="s-row">
             <section class="hours">
-                <span class="subtitle">Hours Remaining</span>
-                <span>{Math.floor(counterMs / (1000 * 60 * 60))}</span>
+                <span class="subtitle">Hours</span>
+                <span class="sub-text">{Math.floor(counterMs / (1000 * 60 * 60))}</span>
             </section>
             <section class="minutes">
-                <span class="subtitle">Minutes Remaining</span>
-                <span>{Math.floor(counterMs / (1000 * 60))}</span>
+                <span class="subtitle">Minutes</span>
+                <span class="sub-text">{Math.floor(counterMs / (1000 * 60))}</span>
             </section>
         </div>
         <div class="l-row">
             <section class="miliseconds">
-                <span>Seconds Remaining</span>
-                <span>{Math.floor(counterDs)}</span>
+                <span class="subtitle">Seconds</span>
+                <span class="sub-text">{Math.floor(counterDs)}</span>
             </section>
         </div>
     </div>
