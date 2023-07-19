@@ -41,8 +41,7 @@
     .main-wrapper {
         height: 100%;
         width: 100%;
-        /* background-image: linear-gradient(to bottom right, rgb(33,34,41), rgb(42,34,31)); */
-        background-color: lavender;
+        background-image: linear-gradient(to bottom right, rgb(33,34,41), rgb(42,34,31));
         display: flex;
         justify-content: center;
         align-items: center;
