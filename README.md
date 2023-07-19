@@ -1,38 +1,26 @@
-# create-svelte
+# Dave's Retirement Clock
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Dave is coming up on his retirement date.
+So, I thought it would be fun to do a little project to implement a CI/CD stream
+using Azure Static Web Apps.
 
-## Creating a project
+Auto-generated domain name provided by azurestaticapps.
+*Maybe we'll get a domain?*
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Development
+This was developed using Svelte and SvelteKit.
+It could have been built using only svelte, in that: I did not need to query any API's or DB's over the backend. 
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Research and Implementation
+I'm new to the CI/CD scene, so I thought it would be appropriate to start close enough to a zero-config environment. I've used VM's through Azure in the past, so I thought I'd give azure static web apps a shot. I do enjoy the way you can easily deploy your application from the Github source repository and seemlessly push any updates from repo to live production.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Considerations
+I would be remiss if I did not do my due diligence in completing this lab.
+And so, future projects will include adopting alternative options to implementing a CI/CD chain. 
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Future
+Other labs will include:
+- on-prem CI/CD exercises inside and outside a windows domain.
+- Linux CI/CD deployment options
+- VM CI/CD deployment options via Cloud Computing (PaaS/IaaS)
+- Alternative options to azure like Jenkins (using containers), TeamCity, Bamboo
