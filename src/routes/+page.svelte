@@ -56,8 +56,7 @@
         text-align: center;
         width: 80%;
         height: 70%;
-        min-width: 768px;
-        min-height: 500px;
+        min-height: 700px;
         background-color: rgba(11, 11, 11, 0.1);
         border-radius: 15px;
     }
@@ -120,6 +119,96 @@
         font-family: 'Share Tech Mono', sans-serif;
         font-size: 28pt;
         color: rgba(94, 84, 82);
+    }
+
+    @media only screen and (max-width: 768px) {
+        * {
+            font-size: x-large;
+        }
+
+        .main-wrapper {
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right, rgb(33,34,41), rgb(42,34,31));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .count-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 3%;
+            text-align: center;
+            width: 88%;
+            height: 80%;
+            min-height: 700px;
+            background-color: rgba(11, 11, 11, 0.1);
+            border-radius: 15px;
+            padding: 0 10px;
+        }
+
+        [class*="row"] {
+            width: 97%;
+            display: flex;
+            align-items: center;
+        }
+
+        .f-row {
+            flex-direction: column;
+            justify-content: center;
+            height: 33%;
+        }
+        
+        .s-row {
+            justify-content: space-around;
+            height: 20%;
+            gap: 5%;
+        }
+
+        .l-row {
+            justify-content: center;
+            height: 33%;
+        }
+
+        .f-row, .l-row {
+            background-color: rgba(11, 11, 11, 0.2);
+            border-radius: 10px;
+        }
+
+        .hours, .minutes, .miliseconds {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hours, .minutes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(11, 11, 11, 0.2);
+            width: 50%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .subtitle, .title {
+            font-family: 'Jost', sans-serif;
+            color: rgb(144, 111, 104);
+            font-size: 28pt;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 30pt;
+        }
+
+        .sub-text {
+            font-family: 'Share Tech Mono', sans-serif;
+            font-size: 28pt;
+            color: rgba(94, 84, 82);
+        }
     }
 </style>
 
