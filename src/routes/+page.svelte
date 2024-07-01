@@ -2,7 +2,7 @@
 <script>
     import { onMount } from 'svelte';
 
-    const retirement = new Date("Fri Jun 28 2024 15:00:00 GMT-0600");
+    const retirement = new Date("Thu Aug 01 2024 15:00:00 GMT-0600");
     $: today = new Date();
     $: counterMs = retirement - today;
     $: counterDs = Math.floor(counterMs / 100);
